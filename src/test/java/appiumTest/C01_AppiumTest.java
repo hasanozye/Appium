@@ -26,7 +26,7 @@ public class C01_AppiumTest {
         //todo emulator -list-avds => cihaz ismini de bu kod sayesinde buluruz.
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.0");
         //todo adb shell getprop ro.build.version.release => version bulmak için
-        desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator1");
+        desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 
         desiredCapabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\PC\\IdeaProjects\\com.GuiderSoftAppium\\src\\app\\Duolingo.apk");
 

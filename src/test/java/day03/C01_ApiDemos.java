@@ -10,6 +10,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class C01_ApiDemos {
@@ -39,7 +41,13 @@ public class C01_ApiDemos {
         WebElement peopleName = driver.findElement(By.xpath("//*[@text=\"People Names\"]"));
         peopleName.click();
 
-        String first = driver.findElement(By.xpath("//*[@text=\"Arnold\"]")).getText();
+        List <AndroidElement> list = driver.findElements(By.className("android.widget.TextView"));
+
+        for (int i = 2; i < 6 ; i++) {
+            System.out.println(list.get(i).getText());
+        }
+
+        /*String first = driver.findElement(By.xpath("//*[@text=\"Arnold\"]")).getText();
         System.out.println("first = " + first);
 
         String second = driver.findElement(By.xpath("//*[@text=\"Barry\"]")).getText();
@@ -50,6 +58,8 @@ public class C01_ApiDemos {
 
         String fourth = driver.findElement(By.xpath("//*[@text=\"David\"]")).getText();
         System.out.println("fourth = " + fourth);
+
+         */
 
 
     }

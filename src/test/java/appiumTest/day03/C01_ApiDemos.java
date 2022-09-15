@@ -1,4 +1,4 @@
-package day03;
+package appiumTest.day03;
 
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
@@ -92,8 +92,8 @@ public class C01_ApiDemos {
         Thread.sleep(2000);
 
         WebElement text = driver.findElement(By.xpath("//*[@text=\"Appium çok güzel\"]"));
-        String realText =text.getText();
-        ;
+        String realText = text.getText();
+
         Assert.assertTrue(realText.equals("Appium çok güzel"));
         System.out.println("text = " + realText);
 

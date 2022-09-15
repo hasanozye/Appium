@@ -1,3 +1,28 @@
 
-//TODO adb shell getprop ro.build.version.release => version bulmak için
-//TODO: emulator cihaz ismi... ????????
+//todo adb shell getprop ro.build.version.release => version bulmak için
+//todo emulator -list-avds => cihaz ismini de bu kod sayesinde buluruz.
+
+//todo adb shell  settings get secure android_id  UDID icin
+
+//todo adb shell ile giriş yapılmalı
+//todo dumpsys window windows | grep -E 'mCurrentFocus'  => appPackage ile appAcvity almamıza yarar
+
+
+---------------------------------------------------------------------------
+//todo Appium'un genel gereksinimlerine ek olarak: İPhone Test için
+
+Apple'ın XCUITest kitaplığı yalnızca iOS simülatörlerinde ve iOS 9.3 veya üstünü çalıştıran cihazlarda kullanılabilir.
+macOS 10.11 veya 10.12 yüklü bir Mac bilgisayar gereklidir.
+Xcode 7 veya üstü gereklidir.
+XCUITest sürücüsü, Appium 1.6'dan başlayarak Appium'da mevcuttu.
+Sürücünün doğru çalışması için ek sistem kitaplıkları gereklidir (aşağıdaki Kurulum bölümlerine bakın).
+ //todo Server ve amulator hatası alındığında
+ Komut istemini açın ve şuraya gidin:
+  android sdk>platform araçları>
+ //todo adb kill-server
+  Enter tuşuna basın
+  ve yeniden
+  //todo adb start-server
+  Enter tuşuna basın
+
+  https://www.browserstack.com/app-automate/capabilities
